@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe By Authors</title>
+</head>
+<body>
+<h2>RICETTE AUTORI </h2>
+
+<div class="form-container">
+  <form method="POST" action="/recipe/authors">
+    <input type="text" name="authors" placeholder="Autore" />
+    <input type="submit" value="Cerca" />
+  </form>
+</div>
+</br>
+<div th:insert="~{ricette}"></div>
+
+<a href="../" >HOME</a>
+</body>
+</html>

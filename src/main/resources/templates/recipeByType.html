@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe By Type</title>
+</head>
+<body>
+<h2>RICETTE PER TIPO</h2>
+
+<div class="form-container">
+  <form method="POST" action="/recipe/types">
+    <input type="text" name="type" placeholder="Tipo" />
+    <input type="submit" value="Cerca" />
+  </form>
+</div>
+</br>
+<div th:insert="~{ricette}"></div>
+
+<a href="../" >HOME</a>
+</body>
+</html>

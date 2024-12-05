@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe By Ingredients</title>
+</head>
+<body>
+<h2>RICETTE CON INGREDIENTE </h2>
+
+<div class="form-container">
+    <form method="POST" action="/recipe/ingredients">
+        <input type="text" name="ingredient" placeholder="Ingrediente" />
+        <input type="submit" value="Cerca" />
+    </form>
+</div>
+</br>
+<div th:insert="~{ricette}"></div>
+
+<a href="../" >HOME</a>
+</body>
+</html>
